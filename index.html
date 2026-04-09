@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">&lt;Portfolio /&gt;</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, World!</p>
+            <h1 class="hero-title">I'm <span class="highlight">Your Name</span></h1>
+            <p class="hero-subtitle">Backend Developer | Problem Solver | System Architect</p>
+            <p class="hero-description">I build robust APIs, design scalable systems, and solve complex backend problems. Clean code and efficient algorithms are my thing.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/yourusername" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+        <div class="hero-code">
+            <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-string">"Your Name"</span>,
+  <span class="code-key">role</span>: <span class="code-string">"Backend Developer"</span>,
+  <span class="code-key">passions</span>: [<span class="code-string">"API Design"</span>, <span class="code-string">"Distributed Systems"</span>, <span class="code-string">"Performance Optimization"</span>],
+  <span class="code-key">problemSolving</span>: <span class="code-boolean">true</span>
+};</code></pre>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span> About Me <span class="code-bracket">/&gt;</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Backend-Focused Developer</h3>
+                    <p>I'm a backend developer who loves tackling complex problems. While others focus on pixels, I focus on performance, scalability, and data integrity. I enjoy designing efficient algorithms, building RESTful APIs, and optimizing database queries.</p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-server"></i>
+                            <h4>API Design</h4>
+                            <p>RESTful & GraphQL APIs</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-database"></i>
+                            <h4>Databases</h4>
+                            <p>SQL & NoSQL optimization</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-microchip"></i>
+                            <h4>Performance</h4>
+                            <p>Scalability & caching</p>
+                        </div>
+                    </div>
+
+                    <div class="career-focus">
+                        <h4>What I Focus On</h4>
+                        <ul>
+                            <li>Building scalable microservices architectures</li>
+                            <li>Optimizing database performance and query efficiency</li>
+                            <li>Implementing secure authentication and authorization</li>
+                            <li>Designing efficient data models and algorithms</li>
+                            <li>Solving complex concurrency and distributed systems problems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span> Projects <span class="code-bracket">/&gt;</span></h2>
+            <p class="section-subtitle">Backend systems and APIs I've built</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>RESTful API Service</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" title="API Docs"><i class="fas fa-book"></i></a>
+                            </div>
+                        </div>
+                        <p>Built a scalable REST API with JWT authentication, rate limiting, and comprehensive logging. Handles 10K+ requests/minute with 99.9% uptime.</p>
+                        <div class="project-role">
+                            <span class="role-badge">Backend Developer</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-outcomes">
+                            <h4>Technical Challenges:</h4>
+                            <ul>
+                                <li>Implemented Redis caching reducing response time by 80%</li>
+                                <li>Designed database schema handling millions of records</li>
+                                <li>Built custom middleware for authentication & rate limiting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Microservices Architecture</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" title="Architecture"><i class="fas fa-sitemap"></i></a>
+                            </div>
+                        </div>
+                        <p>Designed and implemented a microservices system with service discovery, message queues, and inter-service communication handling 50K daily transactions.</p>
+                        <div class="project-role">
+                            <span class="role-badge">System Architect</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">gRPC</span>
+                            <span class="tech-tag">RabbitMQ</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-outcomes">
+                            <h4>Technical Challenges:</h4>
+                            <ul>
+                                <li>Implemented eventual consistency patterns across services</li>
+                                <li>Built circuit breakers for fault tolerance</li>
+                                <li>Optimized service-to-service communication latency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Data Pipeline System</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" title="Docs"><i class="fas fa-file-alt"></i></a>
+                            </div>
+                        </div>
+                        <p>Created an ETL pipeline processing 5TB of data daily with real-time analytics, data transformation, and automated quality checks.</p>
+                        <div class="project-role">
+                            <span class="role-badge">Data Engineer</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">Spark</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">S3</span>
+                        </div>
+                        <div class="project-outcomes">
+                            <h4>Technical Challenges:</h4>
+                            <ul>
+                                <li>Optimized data transformation reducing processing time by 60%</li>
+                                <li>Implemented fault-tolerant pipeline with automatic retry</li>
+                                <li>Designed data quality checks catching 99% of anomalies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more">
+                <a href="https://github.com/yourusername?tab=repositories" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All Repositories
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span> Skills <span class="code-bracket">/&gt;</span></h2>
+
+            <div class="skills-wrapper">
+                <!-- Backend Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-terminal"></i> Backend Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag-main">Node.js</span>
+                        <span class="skill-tag-main">Express</span>
+                        <span class="skill-tag-main">Python</span>
+                        <span class="skill-tag-main">Django</span>
+                        <span class="skill-tag-main">FastAPI</span>
+                        <span class="skill-tag-main">Go</span>
+                        <span class="skill-tag-main">Rust</span>
+                        <span class="skill-tag-main">Java</span>
+                        <span class="skill-tag-main">Spring Boot</span>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Databases & Storage</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag-main">PostgreSQL</span>
+                        <span class="skill-tag-main">MySQL</span>
+                        <span class="skill-tag-main">MongoDB</span>
+                        <span class="skill-tag-main">Redis</span>
+                        <span class="skill-tag-main">Elasticsearch</span>
+                        <span class="skill-tag-main">GraphQL</span>
+                        <span class="skill-tag-main">RabbitMQ</span>
+                        <span class="skill-tag-main">Kafka</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-cloud"></i> DevOps & Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag-main">Docker</span>
+                        <span class="skill-tag-main">Kubernetes</span>
+                        <span class="skill-tag-main">AWS</span>
+                        <span class="skill-tag-main">GCP</span>
+                        <span class="skill-tag-main">GitHub Actions</span>
+                        <span class="skill-tag-main">GitLab</span>
+                        <span class="skill-tag-main">Terraform</span>
+                        <span class="skill-tag-main">Linux</span>
+                    </div>
+                </div>
+
+                <!-- Core Concepts -->
+                <div class="skills-category full-width">
+                    <h3><i class="fas fa-brain"></i> Core Backend Concepts</h3>
+                    <div class="concepts-grid">
+                        <div class="concept-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>System Design</h4>
+                            <p>Scalable architectures, microservices, event-driven systems</p>
+                        </div>
+                        <div class="concept-card">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h4>Performance</h4>
+                            <p>Caching strategies, query optimization, load balancing</p>
+                        </div>
+                        <div class="concept-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Security</h4>
+                            <p>OAuth2, JWT, encryption, secure auth flows</p>
+                        </div>
+                        <div class="concept-card">
+                            <i class="fas fa-sync"></i>
+                            <h4>Concurrency</h4>
+                            <p>Multi-threading, async patterns, race conditions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="code-bracket">&lt;</span> Contact <span class="code-bracket">/&gt;</span></h2>
+            <p class="section-subtitle">Let's discuss backend challenges and opportunities</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Find Me On</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://stackoverflow.com/users/youruserid" target="_blank" title="Stack Overflow">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                            <a href="https://dev.to/yourusername" target="_blank" title="Dev.to">
+                                <i class="fab fa-dev"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resume-download">
+                        <a href="assets/resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic...</option>
+                                <option value="job-opportunity">Job Opportunity</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="backend-question">Backend Question</option>
+                                <option value="code-review">Code Review Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about the backend challenge or opportunity..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>&lt;Portfolio /&gt;</h3>
+                    <p>// Backend-focused developer</p>
+                    <p>// Problem solver</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    <a href="mailto:your.email@example.com">Email</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. Built with clean code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

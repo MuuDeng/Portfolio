@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website template",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx live-server --port=3000",
+    "build": "echo 'No build step required for static HTML'",
+    "deploy": "echo 'Choose your deployment platform: GitHub Pages, Netlify, or Vercel'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "template",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}
